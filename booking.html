@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<!-- headers section -->
+<header>
+    <div class="logo ">
+        <h1>RAHAJIPE<span>RESORT</span></h1>
+    </div>
+<nav aria-label="main navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">BOOK NOW</a></li>
+        <li><a href="bookings.html">My Bookings</a></li>
+    </ul>
+</nav>
+</header>
+ <main>
+<section>
+    <h2>CREATE YOUR VIEWS</h2>
+    <P>fill in the detailsbelow to book your place in the resort</P>
+
+    <form>
+        <!-- full name -->
+         <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Daudi Kazungu" required>
+            <div class="error-message" id="nameError"></div>
+         </div>
+
+        <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <div class="error-message" id="emailError"></div>
+         </div>
+         
+         <!-- Booking Date -->
+         <div class="form-group">
+            <label for="date">Preferred Date *</label>
+            <input type="date" id="date" name="date" required>
+            <div class="error-message" id="dateError"></div>
+         </div>
+
+         <!-- Package Selection -->
+          <div class="form-group">
+            <label for="package">Resort Package *</label>
+            <select id="package" name="package" required>
+                <option value="" disabled selected>-- select a package --</option>
+                <option value="Entrance & Guides">Entrance & Guides -KES 300</option>
+                <option value="Horse Riding">Horse Riding -KES 2500</option>
+                <option value="Clothing & Gear">Clothing & Gear -KES 500</option>
+                <option value="Full Day ">Full Day -KES 3000</option>
+            </select>
+            <div class="error-message" id="packageError"></div>
+         </div>
+
+         <!-- Number of people -->
+          <div class="form-group">
+            <label for="participants">Number of Participants *</label>
+            <input type="number" id="participants" name="participants" min="1" max="20" value="1" required>
+            <div class="error-message" id="participantsError"></div>
+         </div>
+
+         <!-- Special Request -->
+          <div class="form-group">
+            <label for="requests">Special Requests (optional) *</label>
+            <textarea id="requests" name="requests" rows="3" placeholder="Any special concern"></textarea>
+         </div>
+
+         <!-- submit button -->
+          <button type="submit " class="">SAVE BOOKING</button>
+        
+    </form>
+</section>
+</main>
+
+   <!-- footer section -->
+    <footer>
+        <div class="footer-content">
+            <p>Wakuu,Shamba-Kenya/rahajipe@gmail.com/+254793801138</p>
+            <p>&copy; 2026 Rahajipe Resort</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+    <script>
+    </script>
+</body>
+</html>
