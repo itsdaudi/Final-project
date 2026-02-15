@@ -21,11 +21,11 @@
 </nav>
 </header>
  <main>
-<section>
-    <h2>CREATE YOUR VIEWS</h2>
-    <P>fill in the detailsbelow to book your place in the resort</P>
+<section id="booking-form-section">
+    <h2>CREATE YOUR ADVENTURE</h2>
+    <P class="section-desk">fill in the detailsbelow to book your place in the resort</P>
 
-    <form>
+    <form id="bookingform" novalidate>
         <!-- full name -->
          <div class="form-group">
             <label for="name">Full Name *</label>
@@ -74,8 +74,8 @@
          </div>
 
          <!-- submit button -->
-          <button type="submit " class="">SAVE BOOKING</button>
-        
+          <button type="submit " class="btn btn-primary btn-block">SAVE BOOKING</button>
+        <div id="form-message" class="message" style="display: none;"></div>
     </form>
 </section>
 </main>
