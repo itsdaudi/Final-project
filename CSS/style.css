@@ -212,17 +212,36 @@ section{
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text-light);
 }
 input,select,textarea{
     width: 100%;
     padding: 0.8rem 1.2rem;
     border: 1px solid var(--border);
     border-radius: 8px;
-    background: transparent;
+    background: var(--big-card);
     color: var(--text-light);
     font-size: 1rem;
 } 
+
+/* Select dropdown styling for resort package */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+/* Style the select options dropdown */
+select option {
+    background: var(--big-card);
+    color: var(--text-light);
+    padding: 0.5rem;
+}
 
 input:focus,select:focus,textarea:focus{
     outline: none;
